@@ -10,7 +10,7 @@ function writePassword() {
 
 }
 
-function generatePassword(){
+function generatePassword() {
   return "This will be replaced by my generated password."; 
 }
 
