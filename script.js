@@ -27,11 +27,25 @@ function setStart () {
 // check input length
 
 function inputLength(){
+  while(allGood === false){
+    var inputAnswer = prompt("please enter password length between 8 and 128 characters");
+    var numInput = isNaN(inputAnswer);
+    if(inputAnswer < 8 || inputAnswer > 128 || inputAnswer === null || inputAnswer === "")
+    {
+      alert("answer must be 8 or more characters and 128 or less");
+    } else if (numInput) {
+      alert("input must be numerals");
+    } else {
+        allGood = true;
+        return inputAnswer;
+        break;
 
-  while(goodAnswer === false){
-    var inputAnswer = prompt("please enter password len")
+    }
   }
 }
+
+
+
 
 
 
