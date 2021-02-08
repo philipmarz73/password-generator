@@ -80,7 +80,7 @@ function userInput(){
     }
   }
 }
-// add functions for password inputs
+// add functions to randomize password inputs
 function upperCase(){       
   var ucInput = Math.floor(Math.random() * 26);
    c = c + uCase[parseInt(ucInput)];
@@ -100,6 +100,8 @@ function symbols(){
          c = c + symbols[parseInt(symInput)];
         }
 
+
+        
 
 
 
