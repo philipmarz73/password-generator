@@ -63,7 +63,7 @@ function optSym() {
   return symbol;
 }
 
-// functions to collect user input
+// function to collect user input
 
 function userInput(){
   conditionsMet = false
@@ -78,15 +78,27 @@ function userInput(){
     }else{
       conditionsMet = true;
     }
-    
   }
-
 }
+// add functions for password inputs
+function upperCase(){       
+  var ucInput = Math.floor(Math.random() * 26);
+   c = c + uCase[parseInt(ucInput)];
+        }
 
+function lowerCase(){       
+    var lcInput = Math.floor(Math.random() * 26);
+     c = c + lCase[parseInt(lcInput)];
+        }
+function numbers(){       
+      var numInput = Math.floor(Math.random() * 26);
+       c = c + numbers[parseInt(numInput)];
+        }
 
-
-
-
+function symbols(){       
+        var symInput = Math.floor(Math.random() * 26);
+         c = c + symbols[parseInt(symInput)];
+        }
 
 
 
