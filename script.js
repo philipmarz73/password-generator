@@ -45,6 +45,24 @@ function inputLength(){
 }
 
 
+// functions to query input options
+function upCase() {
+  var upperCase = confirm("include uppercase option\n ok = yes; cancel = no");
+  return upperCase;
+}
+function loCase() {
+  var lowerCase = confirm("include lowercase option\n ok = yes; cancel = no");
+  return lowerCase;
+}
+function numOpt() {
+  var numberOption = confirm("include number option\n ok = yes; cancel = no");
+  return number;
+}
+function sym() {
+  var symInput = confirm("include symbol option\n ok = yes; cancel = no");
+  return symbol;
+}
+
 
 
 
