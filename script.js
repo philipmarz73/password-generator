@@ -7,6 +7,26 @@ var upCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q
 var lowCase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var symbols = ['!','@','#','$','%','^','&','*','(',')','-','_','+','=','/','{','}','[',']','|'];
 
+// set up function variables
+var allGood = false;
+var answer = "";
+var c = "";
+var finish = "";
+var i = 0;
+var inputAnswer = "";
+var lcInput = "";
+var numInput = "";
+var symInput = "";
+var ucInput = "";
+// check input length
+
+function inputLength(){
+
+  while(goodAnswer === false){
+    var inputAnswer = prompt("please enter password len")
+  }
+}
+
 
 
 
