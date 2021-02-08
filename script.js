@@ -46,22 +46,43 @@ function inputLength(){
 
 
 // functions to query input options
-function upCase() {
+function optUcase() {
   var upperCase = confirm("include uppercase option\n ok = yes; cancel = no");
   return upperCase;
 }
-function loCase() {
+function optLcase() {
   var lowerCase = confirm("include lowercase option\n ok = yes; cancel = no");
   return lowerCase;
 }
-function numOpt() {
+function optNum() {
   var numberOption = confirm("include number option\n ok = yes; cancel = no");
   return number;
 }
-function sym() {
+function optSym() {
   var symInput = confirm("include symbol option\n ok = yes; cancel = no");
   return symbol;
 }
+
+// functions to collect user input
+
+function userInput(){
+  conditionsMet = false
+  while (conditionsMet === false){
+    answer = inputLength();
+    ucInput = upCase();
+    lcInput = lowCase();
+    numInput = numOpt();
+    symInput = symb();
+    if(ucInput === false && lcInput === false && numInput === false && symInput === false){
+      alert("please check at least one option");
+    }else{
+      conditionsMet = true;
+    }
+    
+  }
+
+}
+
 
 
 
