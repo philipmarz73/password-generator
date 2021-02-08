@@ -18,6 +18,12 @@ var lcInput = "";
 var numInput = "";
 var symInput = "";
 var ucInput = "";
+
+function setStart () {
+  i = 0;
+  allGood = false;
+  conditionsMet = false;
+}
 // check input length
 
 function inputLength(){
