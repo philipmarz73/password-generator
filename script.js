@@ -105,7 +105,22 @@ function symbols(){
          c = c + symbols[parseInt(symInput)];
         }
 
-
+// 'generate' function uses input types chosen by User; 
+// checks to see input = 'true' for each type; otherwise 
+// skips types not chosen
+function generate() {
+  while(parseInt(i) <=(answer)) {
+    if(ucInput === true) {
+      upperCase();
+      i += 1;
+      if(parseInt(i) === parseInt(answer)){
+        break;
+      }
+    }
+      }
+    }
+  }
+}
         
 
 
