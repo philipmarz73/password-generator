@@ -68,7 +68,7 @@ function optSym() {
 function userInput(){
   conditionsMet = false
   while (conditionsMet === false){
-    answer = inputLength();
+    // answer = inputLength();
     ucInput = upCase();
     lcInput = lowCase();
     numInput = numOpt();
@@ -139,6 +139,17 @@ function generate() {
             }
           }
           
+// with inputs checked, function to generate password starts
+
+function generatePassword(){
+  setStart();
+  answer = inputLength();
+  userInput();
+  generate();
+  passwordResult = c;
+  c = "";
+  return passwordResult;
+  
 }
         
 
