@@ -13,31 +13,33 @@ var answer = "";
 var c = "";
 var finish = "";
 var i = 0;
-var inputAnswer = "";
+var promptAnswer = "";
 var lcInput = "";
 var numInput = "";
 var symInput = "";
 var ucInput = "";
 
+
+// defining starting function to check if conditions of choice met
 function setStart () {
   i = 0;
   allGood = false;
   conditionsMet = false;
 }
-// check user input length
+// check user input length and input if conditions met
 
 function inputLength(){
   while(allGood === false){
-    var inputAnswer = prompt("please enter password length between 8 and 128 characters");
-    var numInput = isNaN(inputAnswer);
-    if(inputAnswer < 8 || inputAnswer > 128 || inputAnswer === null || inputAnswer === "")
+    var promptAnswer = prompt("please enter password length between 8 and 128 characters");
+    var numAnswer = isNaN(promptAnswer);
+    if(promptAnswer < 8 || promptAnswer > 128 || promptAnswer === null || promptAnswer === "")
     {
-      alert("answer must be 8 or more characters and 128 or less");
-    } else if (numInput) {
-      alert("input must be numerals");
+      alert("password must be from 8 to 128 characters long; please answern in numerals");
+    } else if (numAnswer) {
+      alert("input must be in numerals");
     } else {
         allGood = true;
-        return inputAnswer;
+        return promptAnswer;
         break;
 
     }
@@ -69,10 +71,10 @@ function userInput(){
   conditionsMet = false
   while (conditionsMet === false){
     // answer = inputLength();
-    ucInput = upCase();
-    lcInput = lowCase();
-    numInput = numOpt();
-    symInput = symb();
+    ucInput = optUcase();
+    lcInput = optLcase();
+    numInput = optNum();
+    symInput = optSym();
     if(ucInput === false && lcInput === false && numInput === false && symInput === false){
       alert("please check at least one option");
     }else{
@@ -122,23 +124,24 @@ function generate() {
       i += 1;
       if( parseInt(i) === parseInt(answer)){
           break;
-         }
+      }
+    }
+    if(numInput === true) {
+      numbers();
+      i += 1;
+      if( parseInt(i) === parseInt(answer)){
+          break;
         }
-         if(numInput === true) {
-          numbers();
-          i += 1;
-          if( parseInt(i) === parseInt(answer)){
-              break;
-            }
-          }
-          if(symInput === true) {
-            symbols();
-            i += 1;
-            if( parseInt(i) === parseInt(answer)){
-                break;
-            }
-          }
-          
+    }
+    if(symInput === true) {
+      symbols();
+      i += 1;
+      if( parseInt(i) === parseInt(answer)){
+          break;
+      }
+    }
+  } 
+}      
 // with inputs checked, function to generate password starts
 
 function generatePassword(){
@@ -147,20 +150,11 @@ function generatePassword(){
   userInput();
   generate();
   passwordResult = c;
-  c = "";
+  c = '';
   return passwordResult;
   
 }
         
-
-
-
-
-
-
-
-
-
 
 // Write password to the #password input
 function writePassword() {
@@ -171,9 +165,9 @@ function writePassword() {
 
 }
 
-function generatePassword() {
-  return "This will be replaced by my generated password."; 
-}
+// function generatePassword() {
+//   return "This will be replaced by my generated password."; 
+// }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
