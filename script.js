@@ -117,9 +117,28 @@ function generate() {
         break;
       }
     }
-      }
-    }
-  }
+    if(lcInput === true) {
+      lowerCase();
+      i += 1;
+      if( parseInt(i) === parseInt(answer)){
+          break;
+         }
+        }
+         if(numInput === true) {
+          numbers();
+          i += 1;
+          if( parseInt(i) === parseInt(answer)){
+              break;
+            }
+          }
+          if(symInput === true) {
+            symbols();
+            i += 1;
+            if( parseInt(i) === parseInt(answer)){
+                break;
+            }
+          }
+          
 }
         
 
