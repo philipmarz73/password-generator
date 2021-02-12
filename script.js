@@ -24,7 +24,7 @@ function setStart () {
   allGood = false;
   conditionsMet = false;
 }
-// check input length
+// check user input length
 
 function inputLength(){
   while(allGood === false){
@@ -63,7 +63,7 @@ function optSym() {
   return symbol;
 }
 
-// function to collect user input
+// collect user input
 
 function userInput(){
   conditionsMet = false
@@ -80,7 +80,9 @@ function userInput(){
     }
   }
 }
-// add functions to randomize password inputs
+// add functions to randomize password inputs for uc, lc, numbers, symbols
+
+// randomize letter inputs: choose from 26 letters:
 function upperCase(){       
   var ucInput = Math.floor(Math.random() * 26);
    c = c + uCase[parseInt(ucInput)];
@@ -90,13 +92,16 @@ function lowerCase(){
     var lcInput = Math.floor(Math.random() * 26);
      c = c + lCase[parseInt(lcInput)];
         }
+
+// randomize number input: choose from numbers 0-9:
 function numbers(){       
-      var numInput = Math.floor(Math.random() * 26);
+      var numInput = Math.floor(Math.random() * 10);
        c = c + numbers[parseInt(numInput)];
         }
 
+// randomize symbol input: choose from 20 symbols
 function symbols(){       
-        var symInput = Math.floor(Math.random() * 26);
+        var symInput = Math.floor(Math.random() * 20);
          c = c + symbols[parseInt(symInput)];
         }
 
