@@ -92,7 +92,7 @@ function upperCase(){
 
 function lowerCase(){       
     var lcInput = Math.floor(Math.random() * 26);
-     c = c + lCase[parseInt(lcInput)];
+     c = c + lowCase[parseInt(lcInput)];
         }
 
 // randomize number input: choose from numbers 0-9:
