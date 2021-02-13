@@ -6,3 +6,8 @@ This Application is designed to randomly generate a secure password of between 8
 ## Resources
 
 This project was designed to help teach common JavaScript functions; the HTML and styling were provided for us, and functionality demonstrated by a GIF. In order to achieve functionality, at the click of a button we had to be able to account for and use different combinations of type of input allowed to the User, take in the length desired by the User, and return to the page a randomly-generated combination of characters of the chosen inputs of the requested length.
+
+
+## Functionality
+
+The application was fully functional, as required. A Video link demonstrating this functionality is included here: https://drive.google.com/file/d/1SaiZC088zXDwNh_6_K03reIaa5GL-t7_/view
