@@ -57,11 +57,11 @@ function optLcase() {
   return lowerCase;
 }
 function optNum() {
-  var numbers = confirm("include number option\n ok = yes; cancel = no");
+  var numbers = confirm("include numbers option\n ok = yes; cancel = no");
   return numbers;
 }
 function optSym() {
-  var symbols = confirm("include symbol option\n ok = yes; cancel = no");
+  var symbols = confirm("include symbols option\n ok = yes; cancel = no");
   return symbols;
 }
 
