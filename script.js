@@ -34,7 +34,7 @@ function inputLength(){
     var numAnswer = isNaN(promptAnswer);
     if(promptAnswer < 8 || promptAnswer > 128 || promptAnswer === null || promptAnswer === "")
     {
-      alert("password must be from 8 to 128 characters long; please answern in numerals");
+      alert("password must be from 8 to 128 characters long; please answer in numerals");
     } else if (numAnswer) {
       alert("input must be in numerals");
     } else {
@@ -57,11 +57,11 @@ function optLcase() {
   return lowerCase;
 }
 function optNum() {
-  var numberOption = confirm("include number option\n ok = yes; cancel = no");
+  var number = confirm("include number option\n ok = yes; cancel = no");
   return number;
 }
 function optSym() {
-  var symInput = confirm("include symbol option\n ok = yes; cancel = no");
+  var symbol = confirm("include symbol option\n ok = yes; cancel = no");
   return symbol;
 }
 
@@ -87,7 +87,7 @@ function userInput(){
 // randomize letter inputs: choose from 26 letters:
 function upperCase(){       
   var ucInput = Math.floor(Math.random() * 26);
-   c = c + uCase[parseInt(ucInput)];
+   c = c + upCase[parseInt(ucInput)];
         }
 
 function lowerCase(){       
