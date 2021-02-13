@@ -95,14 +95,14 @@ function lowerCase(){
      c = c + lowCase[parseInt(lcInput)];
         }
 
-// randomize number input: choose from numbers 0-9:
-function numbers(){       
+// randomize number input: choose from digits 0-9:
+function digits(){       
       var numInput = Math.floor(Math.random() * 10);
        c = c + numbers[parseInt(numInput)];
         }
 
-// randomize symbol input: choose from 20 symbols
-function symbols(){       
+// randomize symbol input: choose from 20 symbols, or "widgets"
+function widgets(){       
         var symInput = Math.floor(Math.random() * 20);
          c = c + symbols[parseInt(symInput)];
         }
@@ -127,14 +127,14 @@ function generate() {
       }
     }
     if(numInput === true) {
-      numbers();
+      digits();
       i += 1;
       if( parseInt(i) === parseInt(answer)){
           break;
         }
     }
     if(symInput === true) {
-      symbols();
+      widgets();
       i += 1;
       if( parseInt(i) === parseInt(answer)){
           break;
@@ -171,3 +171,5 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
